@@ -13,7 +13,44 @@
 		<link rel="stylesheet" href="dist/tailwind.css" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-	<body class="bg-blue-200">
+	<body class="bg-blue-200 flex justify-center font-semibold">
+		<div
+			id="appContaier"
+			class="
+				rounded-xl
+				bg-blue-500
+				w-[300px]
+				h-[300px]
+				mt-16
+				flex flex-col
+				justify-evenly
+				text-center
+			"
+		>
+			<p>Hi i am Reverse Checker</p>
+			<p>
+				Give me a word and <br />
+				i will Reverse it for U
+			</p>
+			<div class="w-full">
+				<input
+					id="input"
+					spellcheck="false"
+					type="text"
+					class="text-center w-6/12 px-4 outline-none"
+				/>
+			</div>
+			<div class="w-16 mx-auto">
+				<button
+					class="font-semibold py-1 px-4 bg-green-400"
+					onclick="myFunction()"
+				>
+					Check
+				</button>
+			</div>
+
+			<p id="result">Result</p>
+		</div>
 		<script src="script.js"></script>
 	</body>
 </html>

@@ -1,16 +1,11 @@
-console.log(true);
-// function myFunction(string) {
-// 	return string.split("").reverse().join("").split(" ").reverse().join(" ");
-// }
-function myFunction(string) {
-	let revWord = string
+function myFunction() {
+	let myInput = document.getElementById("input");
+	let result = document.getElementById("result");
+	let mamad = myInput.value
 		.split(" ")
 		.map((e) => {
 			return e.split("").reverse().join("");
 		})
 		.join(" ");
-
-	return revWord;
+	result.textContent = "Result :" + " " + mamad;
 }
-
-console.log(myFunction("reza aher jane del mamad"));
